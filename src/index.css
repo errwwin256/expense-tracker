@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-retroDark text-white font-retro;
+}
+.retro-btn {
+  @apply px-2 py-1 text-xs font-bold rounded border border-retroDark shadow-[2px_2px_0_#000];
+  transition: all 0.1s ease;
+}
+.retro-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+.retro-glow {
+  text-shadow: 0 0 5px #fff, 0 0 10px #ff77a8, 0 0 20px #ff77a8;
+}
